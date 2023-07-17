@@ -31,7 +31,7 @@ header>div {
 }
 
 .nav-photo {
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 .nav-photo img {
@@ -74,6 +74,10 @@ footer a {
     .container {
         margin-left: 0.3em;
         margin-right: 0.3em;
+    }
+
+    .nav-photo {
+        padding-top: 5px;
     }
 
     .nav-photo img {
