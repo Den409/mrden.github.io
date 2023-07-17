@@ -1,0 +1,59 @@
+/* Контент */
+.content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1);
+}
+
+.text {
+    grid-column: 1/8;
+    font-size: 2em;
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
+}
+
+.text h1,
+p {
+    margin: 0;
+}
+
+.photo {
+    grid-column: 8/13;
+    margin: auto;
+    
+}
+
+.photo img {
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.photo button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+
+.photo img:hover {
+    transform: scale(1.2);
+}
+
+.photo button:active img {
+    transform: scale(0.9);
+}
+
+
+@media (max-width: 600px) {
+    .text {
+        grid-column: 1/13;
+        font-size: 1.5em;
+        margin-top: 4em;
+        margin-bottom: 5em;
+    }
+
+    .photo {
+        grid-column: 1/13;
+        margin: auto;
+        margin-bottom: 4em;
+    }
+}
