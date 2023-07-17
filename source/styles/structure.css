@@ -69,3 +69,25 @@ footer a {
         margin-right: 1em;
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
+
+    .nav-photo img {
+        width: 20px;
+    }
+    
+    .name {
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .nav-item {
+        margin: 0.5em;
+        text-decoration: none;
+    }
+    
+}
