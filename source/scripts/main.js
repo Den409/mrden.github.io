@@ -29,7 +29,7 @@ function setRadius() {
 function createHearts(className) {
     console.log("create", className)
     for (let i = 0; i < heartCount; i++) {
-        particles.insertAdjacentHTML("afterbegin", `<span class="${className}" style="position: absolute; font-size: 2em; color: rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})">❤</span>`)
+        particles.insertAdjacentHTML("afterbegin", `<img class="${className}" src="source/files/heart_${Math.ceil(Math.random() * 15)}.png" style="position: absolute; width: 30px;">`)
     }
 }
 
