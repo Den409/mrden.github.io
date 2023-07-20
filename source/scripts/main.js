@@ -2,6 +2,7 @@ var canvas = document.querySelector(".photo")
 var cnvs = canvas.getBoundingClientRect()
 var btn = document.querySelector(".btn")
 var minRadius
+var heartCount
 var n = 0
 var time = new Date().getTime()
 
@@ -15,16 +16,19 @@ function sleep(ms) {
 function setRadius() {
     if (window.innerWidth > 1000) {
         minRadius = 150
+        heartCount = 50
     } else if (window.innerWidth > 800) {
         minRadius = 80
+        heartCount = 40
     } else {
         minRadius = 50
+        heartCount = 30
     }
 }
 
 function createHearts(className) {
     console.log("create", className)
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < heartCount; i++) {
         particles.insertAdjacentHTML("afterbegin", `<span class="${className}" style="position: absolute; font-size: 2em; color: rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})">❤</span>`)
     }
 }
