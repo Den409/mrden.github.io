@@ -22,7 +22,7 @@ function setRadius() {
         heartCount = 40
     } else {
         minRadius = 50
-        heartCount = 30
+        heartCount = 20
     }
 }
 
