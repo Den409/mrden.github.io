@@ -22,7 +22,7 @@ p {
     margin: auto;
 }
 
-.photo img {
+.photo button img {
     width: 150px;
     filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.3));
     transition: transform 0.3s;
@@ -35,7 +35,7 @@ p {
     padding: 0;
 }
 
-.photo img:hover {
+.photo button img:hover {
     transform: scale(1.2);
 }
 
@@ -44,13 +44,13 @@ p {
 }
 
 @media (max-width: 1000px) {
-        .photo img {
+        .photo button img {
         width: 100px;
     }
 }
 
 @media (max-width: 800px) {
-        .photo img {
+        .photo button img {
         width: 90px;
     }
 }
@@ -69,7 +69,7 @@ p {
         margin-bottom: 4em;
     }
 
-    .photo img {
+    .photo  button img {
         width: 80px;
     }
 }

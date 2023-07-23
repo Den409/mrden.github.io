@@ -93,6 +93,11 @@ btn.onclick = async function () {
 
 window.addEventListener("DOMContentLoaded", async function () {
     console.log("loaded")
+
+    cnvs = canvas.getBoundingClientRect()
+    particles.style.top = `${cnvs.height / 2 - 17}px`
+    particles.style.left = `${cnvs.width / 2 - 15.5}px`
+
     particles_("heart-1")
     setInterval(particles_, 30000, 'heart-1')
     await sleep(10000)
