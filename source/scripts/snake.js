@@ -17,7 +17,7 @@ const container = document.querySelector(".container")
 let containerSize = container.getBoundingClientRect()
 
 let width = Math.floor((containerSize.width)/box)*box
-let height = Math.floor((window.screen.availHeight-containerSize.height-110)/box)*box
+let height = Math.floor((window.screen.availHeight-containerSize.height-140)/box)*box
 
 content.insertAdjacentHTML("beforeend", `<canvas id="game" width="${width}" height="${height}"></canvas>`)
 const canvas = document.querySelector("#game")
